@@ -5,7 +5,6 @@ import dts from 'vite-plugin-dts';
 export default defineConfig(() => {
   return {
     plugins: [
-      vue(),
       dts({
         outputDir: 'lib',
         tsConfigFilePath: '../../tsconfig.json',
@@ -26,8 +25,7 @@ export default defineConfig(() => {
       // cssCodeSplit: true,
       rollupOptions: {
         // 忽略打包vue文件
-        external: ['vue'],
-        input: ['src/index.ts'],
+        input: ['index.ts'],
         output: [
           {
             format: 'es',
