@@ -1,2 +1,2 @@
-import {pkg1} from '@zhud_test/pkg1'
+import {pkg1,pkg2} from '@zhud_test/pkg1'
 pkg1()

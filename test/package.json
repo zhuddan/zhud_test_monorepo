@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@zhud_test/pkg1": "workspace:^0.0.1",
+    "@zhud_test/pkg1": "workspace:^0.0.3",
     "vite": "^4.1.1"
   }
 }
