@@ -5,4 +5,3 @@ export function pkg1(){
   console.log('this is pkg1')
 }
 
-
