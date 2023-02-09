@@ -10,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@zhud_test/pkg2": "workspace:^0.0.1"
-  }
+  },
+  "typings": "lib/index.d.ts"
 }

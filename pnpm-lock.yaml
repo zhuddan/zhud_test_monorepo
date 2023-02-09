@@ -25,6 +25,9 @@ importers:
     dependencies:
       '@zhud_test/pkg2': link:../pkg2
 
+  packages/pkg2:
+    specifiers: {}
+
 packages:
 
   /@babel/code-frame/7.18.6:

@@ -7,6 +7,7 @@
     "build":"vite build"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "typings": "lib/index.d.ts"
 }
  

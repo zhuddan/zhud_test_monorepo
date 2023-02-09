@@ -6,7 +6,7 @@ export default defineConfig(() => {
   return {
     plugins: [
       dts({
-        outputDir: 'lib',
+        outputDir: 'es',
         tsConfigFilePath: '../../tsconfig.json',
       }),
       dts({
