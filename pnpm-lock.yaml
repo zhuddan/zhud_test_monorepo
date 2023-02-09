@@ -1,0 +1,15 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers:
+      '@zhud_test/pkg2': workspace:^0.0.1
+    dependencies:
+      '@zhud_test/pkg2': link:packages/pkg2
+
+  packages/pkg1:
+    specifiers:
+      '@zhud_test/pkg2': workspace:^0.0.1
+    dependencies:
+      '@zhud_test/pkg2': link:../pkg2

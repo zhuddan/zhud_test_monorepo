@@ -1,8 +1,7 @@
 {
-  "name": "@zhud_test/monorepo",
+  "name": "@zhud_test/pkg1",
   "version": "0.0.1",
-  "private": true,
-  "description": "demo",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
