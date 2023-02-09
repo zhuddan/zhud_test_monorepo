@@ -8,6 +8,8 @@
     "build": "pnpm --filter=@zhud_test/* run build",
     "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
     "changeset": "changeset",
+    "pnpm:publish": "pnpm publish --access public",
+    "changeset:publish": "pnpm changeset publish",
     "version-packages": "changeset version"
   },
   "author": "",
