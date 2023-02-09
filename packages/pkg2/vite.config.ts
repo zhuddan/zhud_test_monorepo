@@ -7,11 +7,11 @@ export default defineConfig(() => {
     plugins: [
       dts({
         outputDir: 'es',
-        tsConfigFilePath: '../../tsconfig.json',
+        tsConfigFilePath: './tsconfig.json',
       }),
       dts({
         outputDir: 'lib',
-        tsConfigFilePath: '../../tsconfig.json',
+        tsConfigFilePath: './tsconfig.json',
       }),
 
     ],
@@ -24,8 +24,7 @@ export default defineConfig(() => {
       // css分离
       // cssCodeSplit: true,
       rollupOptions: {
-        // 忽略打包vue文件
-        input: ['index.ts'],
+        input: ['src/index.ts'],
         output: [
           {
             format: 'es',
@@ -49,8 +48,7 @@ export default defineConfig(() => {
         ],
       },
       lib: {
-        entry: './index.ts',
-        formats: ['es', 'cjs'],
+        entry: './src/index.ts',
       },
     },
   };

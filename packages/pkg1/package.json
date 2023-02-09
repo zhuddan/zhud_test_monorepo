@@ -2,7 +2,7 @@
   "name": "@zhud_test/pkg1",
   "version": "0.0.1",
   "description": "",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "build":"vite build"
   },
