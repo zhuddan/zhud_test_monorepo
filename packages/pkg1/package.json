@@ -18,6 +18,11 @@
     "dist"
   ],
   "exports": {
+    ".": {
+      "types": "./dist/lib/index.d.ts",
+      "require": "./dist/es/index.js",
+      "import": "./dist/lib/index.js"
+    },
     "./*": "./*"
   }
 }
