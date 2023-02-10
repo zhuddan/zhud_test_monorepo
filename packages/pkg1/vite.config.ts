@@ -6,19 +6,18 @@ export default defineConfig(() => {
   return {
     plugins: [
       dts({
-        outputDir: 'es',
+        outputDir: 'dist/es',
         tsConfigFilePath: './tsconfig.json',
       }),
       dts({
-        outputDir: 'lib',
+        outputDir: 'dist/lib',
         tsConfigFilePath: './tsconfig.json',
       }),
-
     ],
     build: {
       target: 'modules',
       // 打包文件目录
-      outDir: 'es',
+      outDir: 'dist/es',
       // 压缩
       minify: false,
       // css分离
@@ -33,7 +32,7 @@ export default defineConfig(() => {
             // 让打包目录和我们目录对应
             preserveModules: true,
             // 配置打包根目录
-            dir: 'es',
+            dir: 'dist/es',
             preserveModulesRoot: 'src',
           },
           {
@@ -42,7 +41,7 @@ export default defineConfig(() => {
             // 让打包目录和我们目录对应
             preserveModules: true,
             // 配置打包根目录
-            dir: 'lib',
+            dir: 'dist/lib',
             preserveModulesRoot: 'src',
           },
         ],
