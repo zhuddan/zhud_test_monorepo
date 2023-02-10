@@ -12,19 +12,12 @@
   "dependencies": {
     "@zhud_test/pkg2": "workspace:*"
   },
-  "main": "dist/lib/index.js",
-  "module": "dist/es/index.js",
-  "typings": "dist/lib/index.d.ts",
   "files": [
     "dist",
     "package.json",
     "CHANGELOG.md"
   ],
-  "exports": {
-    ".": {
-      "types": "./dist/lib/index.d.ts",
-      "require": "./dist/es/index.js",
-      "import": "./dist/lib/index.js"
-    }
-  }
+  "main": "dist/es/index.js",
+  "module": "dist/es/index.js",
+  "typings": "dist/lib/index.d.ts"
 }

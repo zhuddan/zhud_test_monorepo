@@ -1,14 +1,15 @@
 {
   "name": "@zhud_test/pkg2",
   "version": "1.0.8",
+  "author": "",
+  "license": "ISC",
   "description": "",
   "main": "src/index.ts",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "build": "pnpm run clear && vite build",
     "version:patch": "pnpm version patch",
     "clear": "rm -rf dist && rm -rf es && rm -rf lib"
-  },
-  "author": "",
-  "license": "ISC",
-  "typings": "lib/index.d.ts"
+  }
+ 
 }

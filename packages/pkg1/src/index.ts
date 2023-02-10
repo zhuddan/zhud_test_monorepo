@@ -6,5 +6,5 @@ export * from "./run";
 
 export function pkg1() {
   pkg2();
-  console.log("this is pkg1");
+  console.log("hellow! this is pkg1");
 }
