@@ -3,7 +3,7 @@
   "changelog": "@changesets/cli/changelog",
   "commit": false,
   "fixed": [],
-  "linked": [["@zhud_test/*"]],
+  "linked": [["@zhud_test/pkg1","@zhud_test/pkg2"]],
   "access": "public",
   "baseBranch": "master",
   "updateInternalDependencies": "patch",

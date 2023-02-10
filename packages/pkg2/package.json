@@ -1,6 +1,6 @@
 {
   "name": "@zhud_test/pkg2",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "",
   "license": "ISC",
   "description": "",
@@ -11,5 +11,4 @@
     "version:patch": "pnpm version patch",
     "clear": "rm -rf dist && rm -rf es && rm -rf lib"
   }
- 
 }
