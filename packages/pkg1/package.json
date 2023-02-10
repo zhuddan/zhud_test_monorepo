@@ -1,11 +1,16 @@
 {
   "name": "@zhud_test/pkg1",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
   "scripts": {
     "build": "pnpm run clear && vite build",
     "version:patch": "pnpm version patch",
     "clear": "rm -rf dist && rm -rf es && rm -rf lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuddan/zhud_test_monorepo.git",
+    "directory": "packages/pkg1"
   },
   "author": "",
   "license": "ISC",
@@ -15,9 +20,10 @@
   "files": [
     "dist",
     "package.json",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "README.md"
   ],
-  "main": "dist/es/index.js",
+  "main": "dist/lib/index.js",
   "module": "dist/es/index.js",
   "typings": "dist/lib/index.d.ts"
 }

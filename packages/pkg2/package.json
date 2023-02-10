@@ -1,14 +1,25 @@
 {
   "name": "@zhud_test/pkg2",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "author": "",
   "license": "ISC",
   "description": "",
   "main": "src/index.ts",
   "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuddan/zhud_test_monorepo.git",
+    "directory": "packages/pkg2"
+  },
   "scripts": {
     "build": "pnpm run clear && vite build",
     "version:patch": "pnpm version patch",
     "clear": "rm -rf dist && rm -rf es && rm -rf lib"
-  }
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "CHANGELOG.md",
+    "README.md"
+  ]
 }
