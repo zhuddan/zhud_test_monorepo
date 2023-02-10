@@ -4,8 +4,9 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "build": "vite build",
-    "version:patch": "pnpm version patch"
+    "build": "pnpm run clear && vite build",
+    "version:patch": "pnpm version patch",
+    "clear":"rm -rf dist && rm -rf es && rm -rf lib"
   },
   "author": "",
   "license": "ISC",

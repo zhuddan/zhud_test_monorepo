@@ -4,11 +4,13 @@
   "private": true,
   "description": "demo",
   "scripts": {
+    "dev":"pnpm --filter ./examples/ run dev",
+    "reload":"pnpm --filter ./examples/ run reload",
     "build": "pnpm --filter=@zhud_test/* run build",
     "build:pkg1": "pnpm --filter=@zhud_test/pkg1 run build",
     "build:pkg2": "pnpm --filter=@zhud_test/pkg2 run build",
     "version:patch": "pnpm --filter=@zhud_test/* run version:patch",
-    "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
+    "clear": "pnpm --filter=@zhud_test/* run clear",
     "changeset": "changeset",
     "changeset:publish": "pnpm changeset publish",
     "version-packages": "changeset version"

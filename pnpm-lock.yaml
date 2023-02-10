@@ -19,6 +19,12 @@ importers:
       vite: 4.1.1
       vite-plugin-dts: 1.7.2_vite@4.1.1
 
+  examples:
+    specifiers:
+      '@zhud_test/pkg1': workspace:*
+    dependencies:
+      '@zhud_test/pkg1': link:../packages/pkg1
+
   packages/pkg1:
     specifiers:
       '@zhud_test/pkg2': workspace:*
@@ -27,12 +33,6 @@ importers:
 
   packages/pkg2:
     specifiers: {}
-
-  test:
-    specifiers:
-      '@zhud_test/pkg1': workspace:*
-    dependencies:
-      '@zhud_test/pkg1': link:../packages/pkg1
 
 packages:
 

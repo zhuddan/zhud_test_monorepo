@@ -3,8 +3,9 @@
   "version": "1.0.6",
   "description": "",
   "scripts": {
-    "build": "vite build",
-    "version:patch": "pnpm version patch"
+    "build": "pnpm run clear && vite build",
+    "version:patch": "pnpm version patch",
+    "clear":"rm -rf dist && rm -rf es && rm -rf lib"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +14,7 @@
   },
   "main": "dist/lib/index.js",
   "module": "dist/es/index.js",
-  "typings": "dist/index.d.ts",
+  "typings": "dist/lib/index.d.ts",
   "files": [
     "dist",
     "package.json",
@@ -24,7 +25,6 @@
       "types": "./dist/lib/index.d.ts",
       "require": "./dist/es/index.js",
       "import": "./dist/lib/index.js"
-    },
-    "./*": "./dist/*"
+    }
   }
 }
