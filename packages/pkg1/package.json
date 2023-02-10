@@ -15,7 +15,9 @@
   "module": "dist/es/index.js",
   "typings": "dist/lib/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "package.json",
+    "CHANGELOG.md"
   ],
   "exports": {
     ".": {
