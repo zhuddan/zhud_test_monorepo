@@ -1,10 +1,11 @@
 {
   "name": "@zhud_test/monorepo",
-  "version": "0.0.5",
+  "version": "0.0.4",
   "private": true,
   "description": "demo",
   "scripts": {
     "build": "pnpm --filter=@zhud_test/* run build",
+    "version:patch": "pnpm --filter=@zhud_test/* run version:patch",
     "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
     "changeset": "changeset",
     "changeset:publish": "pnpm changeset publish",
